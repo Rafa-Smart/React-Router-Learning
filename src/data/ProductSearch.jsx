@@ -24,8 +24,8 @@ export default function ProductSearch() {
   // tapi jika ada maka ak di tampilan seacrhnya
   // tapi ini tuh kalo misalkan udah sekali kita seacrh yag ada an / ga null
   // /ketika kita klik lagi seacrh maka tidka akna ke sacrh ulang dan juga tidak muncul si seacrh dulu nya
-// tetet
-// tetet
+  // jadi
+
   return (
     <div>
     <h1>Search Products</h1>
