@@ -52,6 +52,7 @@ export default function ProductSearch() {
 
 
 // Untuk mendapatkan URL saat ini, sebenarnya kita bisa menggunakan
+// Untuk mendapatkan URL saat ini, sebenarnya kita bisa menggunakan
 // window.location.href
 // Tapi React Router menyediakan Hook useLocation(), yang bisa digunakan untuk
 // mendapatkan lokasi path saat ini
