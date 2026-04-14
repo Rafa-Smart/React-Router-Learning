@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYSTEM BREACHED</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background: #050000;
+            overflow: hidden;
+            font-family: 'VT323', monospace;
+        }
+
+        /* Efek Scanline Merah Modern */
+        body::before {
+            content: " ";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.4) 50%),
+                linear-gradient(90deg, rgba(255, 0, 0, 0.05), rgba(0, 0, 0, 0), rgba(255, 0, 0, 0.05));
+            z-index: 15;
+            background-size: 100% 3px, 5px 100%;
+            pointer-events: none;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+            background: radial-gradient(circle, rgba(40, 0, 0, 0.15) 0%, rgba(0, 0, 0, 1) 100%);
+        }
+
+        /* Logo Box ala DedSec */
+        .logo-box {
+            background: #ff0000;
+            color: #000;
+            padding: 15px 40px;
+            font-size: 6rem;
+            font-weight: bold;
+            transform: rotate(-2deg);
+            box-shadow: 12px 12px 0px #440000;
+            animation: glitch-anim 0.15s infinite;
+            border: 3px solid #fff;
+            text-transform: uppercase;
+        }
+
+        .main-title {
+            margin: 0;
+            line-height: 0.9;
+            letter-spacing: -2px;
+        }
+
+        .message-box {
+            background: rgba(20, 0, 0, 0.9);
+            color: #ff3333;
+            margin-top: 40px;
+            padding: 20px;
+            border-left: 8px solid #ff0000;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+            min-width: 350px;
+            line-height: 1.4;
+        }
+
+        .skull {
+            font-size: 5rem;
+            color: #ff0000;
+            margin-bottom: 10px;
+            filter: drop-shadow(0 0 15px #ff0000);
+            animation: blink 0.2s infinite;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 30px;
+            color: #550000;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            font-weight: bold;
+            animation: flicker 2s infinite;
+        }
+
+        /* Keyframes untuk Vibe Watchdogs */
+        @keyframes glitch-anim {
+            0% {
+                transform: rotate(-2deg) translate(0, 0);
+            }
+
+            20% {
+                transform: rotate(-1deg) translate(-5px, 2px);
+                filter: contrast(150%);
+            }
+
+            40% {
+                transform: rotate(-2.5deg) translate(5px, -2px);
+            }
+
+            60% {
+                transform: rotate(-1.8deg) translate(-2px, 3px);
+            }
+
+            100% {
+                transform: rotate(-2deg) translate(0, 0);
+            }
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+        }
+
+        @keyframes flicker {
+
+            0%,
+            18%,
+            22%,
+            25%,
+            53%,
+            57%,
+            100% {
+                opacity: 1;
+            }
+
+            20%,
+            24%,
+            55% {
+                opacity: 0.2;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="overlay">
+        <div class="skull">☠</div>
+        <div class="logo-box">
+            <h1 class="main-title">NYUMMMM!!!!!!</h1>
+        </div>
+        <div class="message-box">
+            > [!] SYSTEM CRITICAL<br>
+            > [!] ACCESS: 000_WAS_HERE<br>
+            > [!] STATUS: ACCESS_DENIED_TO_YOU<br>
+            > [!] MESSAGE: Nice try, Kiddos. 000 owns the logic now.
+        </div>
+        <div class="footer">000 IS WATCHING XIXIXI</div>
+    </div>
+
+    <script>
+        console.log("%c [!] RED ALERT: YALL STUPID ASS HELLL [!] ", "background: #ff0000; color: #000; font-size: 24px; font-weight: bold;");
+    </script>
+</body>
+
+</html>
