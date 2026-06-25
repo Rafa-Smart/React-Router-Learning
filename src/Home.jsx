@@ -1,16 +1,16 @@
 import { useNavigate } from "react-router"
 
-export default function Home(){
+export default function Home() {
     // jadi ini tuh use navigate, adi selain pake navlink dan link
 
     const navigate = useNavigate();
 
-    function handleOnclick(e){
+    function handleOnclick(e) {
         navigate({
-            pathname:'/about'
+            pathname: '/about'
         })
     }
-    
+
     return (
         <div>
             <h1>Halaman Home</h1>
@@ -19,3 +19,5 @@ export default function Home(){
         </div>
     )
 }
+
+// test
